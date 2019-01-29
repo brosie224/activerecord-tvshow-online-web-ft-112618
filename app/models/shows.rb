@@ -13,6 +13,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.least_popular_show
+    binding.pry
     show = Show.find_by(lowest_rating)
   end
 
